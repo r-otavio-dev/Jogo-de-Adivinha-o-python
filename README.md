@@ -1,32 +1,37 @@
-📝 Sobre o Projeto
-Desenvolvi este script em Python para criar uma experiência interativa de jogo entre dois usuários. O objetivo principal foi aplicar conceitos de lógica de programação, manipulação de entradas e o uso da biblioteca random para criar um sistema de competição simples, mas funcional.
+# Jogo de Adivinhação em Python 🎯
 
-🧠 Lógica de Desenvolvimento
-Ao escrever o código, segui os seguintes passos:
+Jogo de terminal para dois participantes adivinharem um número secreto entre 0 e 50. O projeto foi criado para praticar os fundamentos de lógica de programação em Python.
 
-Interatividade Inicial: Comecei capturando o nome dos jogadores para tornar a experiência personalizada através de f-strings.
+## Como funciona
 
-Geração de Dados Aleatórios: Utilizei a função random.randint(0, 50) para garantir que o número secreto fosse imprevisível a cada nova execução. Também adicionei um sorteio estético para definir quem começa a partida.
+1. Os dois jogadores informam seus nomes.
+2. O programa sorteia quem começa.
+3. Um número secreto entre 0 e 50 é gerado.
+4. Os jogadores alternam seus palpites e recebem dicas de “maior” ou “menor”.
+5. A partida termina quando alguém acerta o número.
 
-Gerenciamento de Turnos: Implementei uma estrutura de repetição aninhada (for). O loop externo garante que o jogo não pare até que haja um vencedor, enquanto o loop interno alterna as tentativas entre o Jogador 1 e o Jogador 2.
+## Conceitos praticados
 
-Feedback Dinâmico: Para que o jogo não fosse baseado apenas em sorte, utilizei estruturas condicionais (if/elif/else) para fornecer dicas se o número secreto é maior ou menor que o palpite atual.
+- entrada e saída de dados;
+- variáveis e f-strings;
+- condicionais;
+- laços de repetição;
+- números aleatórios com o módulo `random`.
 
-Finalização: O jogo utiliza a função exit() para encerrar o processo imediatamente assim que a condição de vitória (acerto) é satisfeita.
+## Executar
 
-🛠️ Tecnologias Aplicadas
-Linguagem: Python 3
+Pré-requisito: Python 3 instalado.
 
-Módulos: random (Geração de números e escolhas aleatórias)
+```bash
+git clone https://github.com/r-otavio-dev/Jogo-de-Adivinha-o-python.git
+cd Jogo-de-Adivinha-o-python
+python sorteioeadivinhacao.py
+```
 
-Conceitos: Loops de repetição, condicionais compostas e tratamento de inputs.
+## Possíveis melhorias
 
-Como rodar o meu código:
-Tenha o Python instalado em sua máquina.
-
-Clone este repositório.
-
-Execute o arquivo via terminal:
-
-Bash
-python nome_do_seu_arquivo.py
+- validar entradas que não sejam números;
+- limitar a faixa dos palpites;
+- contar tentativas e partidas vencidas;
+- adicionar testes automatizados;
+- permitir partidas contra o computador.
