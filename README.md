@@ -18,6 +18,13 @@ Jogo de terminal para dois participantes adivinharem um número secreto entre 0 
 - laços de repetição;
 - números aleatórios com o módulo `random`.
 
+## Nível atual do projeto
+
+Este é um dos meus projetos iniciais e está mantido no perfil para registrar a
+evolução da minha base em Python. O código ainda tem pontos simples a melhorar,
+especialmente validação de entrada, alternância correta de turnos, limite de
+tentativas e separação em funções.
+
 ## Executar
 
 Pré-requisito: Python 3 instalado.
